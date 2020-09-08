@@ -25,23 +25,24 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 50px;
-    width: 100%;
+    width: 100vw;
     box-shadow: .1em 0 .1em;
-    padding: 0 1em ;
+    padding: 1em;
 }
 
 header a {
-display: flex;  
+display: flex;
+flex-grow: 1; 
 }
 
 header a:not(:first-child) /*selecter alle link elementen behalve de eerste*/
 {
-justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 header a img {
 background-size: contain;
-    width: 50%;
+    width: 70%;
     height: 50%;
 }
 
@@ -49,112 +50,142 @@ header a:not(:first-child) img{
 width: 35%;
 }
 
+main section {
+    display: flex;
+    flex-direction: column;
+ max-width: 670px;
+}
 
 main section:first-of-type{
     padding-top: 35px;
 }
-main section a {
-    display: flex;
-    position: relative;
+
+main section > * {
+display: flex;
 }
 
-
-
-main section > a:first-child img /*thumbnail van de video*/
-{
-margin: 1em 0 .5em 0;
-
+main section > a {
+position: relative;
 }
 
-main section > a:first-of-type p /*tijd op de video*/
+main section > a:first-of-type {
+order: 1;}
+
+
+main section > a:first-child {
+    margin: 1em 0 .5em 0;
+}
+
+main section > a p /*tijd op de video*/
 {
     position: absolute;
-    padding: .2em;
+    padding: .25em;
     color: #fff;
     background-color: rgba(0,0,0,0.8);
     display: inline-block;   
-    right: 0;
-    bottom: 1em;
-    font-size: 1em;
+    right: .5em;
+    bottom: .5em;
+    font-size: .8em;
+    border-radius: 5px;
 }
 
 main section div /*alles onder de thumbnail */
 {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin: 0 .5em;
-    width: calc(100vw - 1em);
+    margin: .5em .5em 1em;
+    order: 2;
 }
-
 
 main section div > * /*alles onder de thumbnail in secties*/
 /* > is voor alle elementen wat direct na de div komt en niet wat erin genest zit*/
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    padding: 0 .5em;
 }
 
 
-
-
-
-
-main section div a:nth-child(2) /*alle tekst, titel + ondertitel*/
-{
-width: calc(75% - 1em);
-    margin: 0 .5em;
+main section div > a:first-child {
+    order: 2;
 }
 
-main section div a:nth-child(2) p:first-child /*titel video*/
-{
-font-size: 1em;
-font-weight: 700;
-margin: 0 0 .3em 0; }
-
-main section div > p:first-child /*logo van account*/
-{
-/*margin-right: .5em;*/
-    display: flex;
-    justify-content: flex-start;
-}
-
-main section p:first-child img{
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-}
-
-main section div a:nth-child(2) p span {
-    display: inline-block;
-}
-
-main section div a:nth-child(2) p:last-child {
-color: #aaa;
-font-size: .8em;
-}
-
-main section div a:nth-child(2) p:last-child span {
-background-color: #aaa;
-margin-left: .5em;
-margin-right: .5em;
-/*geen margin: 0 .5em gebruikt omdat de span anders tegen de onderkant van de regel aankomt*/
-}
-
-main section div p:nth-child(3){
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    height: 3em;
+main section div > a:nth-of-type(2){
+    order: 1;
+    flex-shrink: 0;
    
 }
 
-main section div p:last-of-type > span {
-    background-color: #000;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    margin: 0.1em 0; 
+main section div > a:nth-of-type(2) img{
+     width: 2.5em;
+    height: 2.5em;
+    border-radius: 100%;
 }
+
+main section div > p {
+    order: 3;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: .5em;
+
+}
+
+main section div > p span{
+   display: inline-block;
+background-color:#000;
+width: .3em;
+height: .3em;
+border-radius: 100%;
+    margin: .1em 0;
+
+}
+
+
+main section div a h2 {
+    font-size: 1em;
+}
+
+main section div a > p {
+font-size: .8em;
+color: #aaa;}
+
+main section div a > p span {
+ display: inline-block;
+background-color:#aaa;
+width: .5em;
+height: .5em;
+border-radius: 100%;
+    margin: 0 .5em;
+
+}
+
+footer {
+position: fixed;
+    z-index: 2;
+    display: flex;
+    bottom: 0;
+    left: 0; right: 0;
+    background-color: #fff;
+    justify-content: space-around;
+    align-content: center;
+    padding: .5em 0;
+}
+
+footer section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+   align-items: center;
+    flex-basis: calc(100%/3);
+   
+}
+
+footer section img {
+order: 1;
+flex-grow: 1;
+width: 2em;
+    
+}
+
+footer section h3 {
+    font-size: .8em;
+    font-weight: 500;
+order: 2;
+text-align: center;}
