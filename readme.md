@@ -13,6 +13,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 4. https://yt3.ggpht.com/a/AATXAJxmq8ive1aZb-ytQhSvJYgEq0hDs4HXXj9gEL6c0Q=s100-c-k-c0xffffffff-no-rj-mo (enzo knol logo)
 5. https://yt3.ggpht.com/a/AATXAJzk27R2HIarflCB5oO7Nb3rBwmiWw4iiefpw_6ncg=s144-c-k-c0xffffffff-no-rj-mo (my baby is hearing me logo)
 6. https://seeklogo.com/vector-logo/316124/youtube-2017 (youtube logo)
+7. https://stackoverflow.com/questions/26973570/setting-a-max-character-length-in-css (truncating text)
 
 
 
