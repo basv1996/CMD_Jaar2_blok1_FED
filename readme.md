@@ -14,6 +14,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 5. https://yt3.ggpht.com/a/AATXAJzk27R2HIarflCB5oO7Nb3rBwmiWw4iiefpw_6ncg=s144-c-k-c0xffffffff-no-rj-mo (my baby is hearing me logo)
 6. https://seeklogo.com/vector-logo/316124/youtube-2017 (youtube logo)
 7. https://stackoverflow.com/questions/26973570/setting-a-max-character-length-in-css (truncating text)
+8. https://s.ytimg.com/yts/img/favicon_96-vflW9Ec0w.png (favicon YouTube)
+9. https://www.iconfinder.com/icons/3688488/burn_camping_fire_fireplace_flame_hot_light_trend_trending_icon (trending icon)
+9. https://www.iconfinder.com/icons/3669170/home_ic_icon (Home Icon)
+10. https://www.iconfinder.com/icons/3669182/ic_library_video_icon (library icon)
+11. https://cdn4.iconfinder.com/data/icons/game-10/22/player-profile-256.png (profile icon)
+12. https://www.iconfinder.com/icons/326690/magnify_search_zoom_icon (search icon)
+13. https://www.youtube.com/watch?v=KyBmo_VffWI (how to fill svg color)
+14. https://stackoverflow.com/questions/7648898/how-to-get-rid-of-blue-outer-border-when-clicking-on-a-form-input-field/7648930 (remove outline input )
 
 
 
