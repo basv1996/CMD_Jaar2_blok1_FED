@@ -25,6 +25,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 
+
+
 ## Eindgesprek (week 7/8)
 
 -dit ging goed & dit was lastig-
@@ -53,13 +55,32 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -dit ging goed & dit was lastig-
 
+Ging goed:
+-bijna elke dag eventjes aan front-end gezeten en de oplossingen van de opdrachten toe kunnen passen in m'n eigen code.
+
+Ging lastig:
+- flexbox is nog een beetje lastig voor mij aangezien ik hier geen ervaring mee heb.
+
+- Ook lukt het mij wel om javascript te schrijven alleen het netjes te maken gaat lastig.
+
+- Ik ben er achter gekomen dat mijn code niet goed werkt op apple apparaten. Hierdoor is de thumbnail van youtube gestretcht. Ik wil dit nog gaan bekijken hoe ik dit kan oplossen.
+![Screenshot van de homepage op een iphone](images/screenshots/screenshots_week3_voortgang1/Screenshot_HomeScreen_MobileVersion_AppleDevices.png) 
+
+
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent-
+![Screenshot van de homepage van youtube gemaakt met code](images/screenshots/screenshots_week3_voortgang1/Screenshot_HomeScreen_MobileVersion.png) 
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+Wij willen graag als groepje de volgende dingen bespreken met de student assistent:
+
+1: Semantisch correcte code (15 min) (Uitleg)
+2: Javascript               (30 min) (opdrachten bekijken)
+3: CSS                      (15 min) (uitleg)
+
+
 
 ### Verslag van meeting
 
