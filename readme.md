@@ -22,8 +22,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 12. https://www.iconfinder.com/icons/326690/magnify_search_zoom_icon (search icon)
 13. https://www.youtube.com/watch?v=KyBmo_VffWI (how to fill svg color)
 14. https://stackoverflow.com/questions/7648898/how-to-get-rid-of-blue-outer-border-when-clicking-on-a-form-input-field/7648930 (remove outline input )
-
-
+15. https://stackoverflow.com/questions/57516373/image-stretching-in-flexbox-in-safari (image stretching on iphones)
+16: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-hidden_attribute (aria hidden)
+17: https://m.youtube.com/static/sign_in_promo.png (sign in image)
 
 
 
@@ -84,8 +85,17 @@ Wij willen graag als groepje de volgende dingen bespreken met de student assiste
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Samen met de student assistenten hebben we gekeken naar onze code en of deze sematisch correct was. Zei hebben ons geholpen en uitleg gegeven over media queries.
 
+Hierna hebben we de opdrachten van FED met de javascript opdrachten samen bekeken.
+Hier hebben zij samen met ons de opdracht met de shoppingcart uitgelegd.
+Tevens hebben zij ons een tip gegeven dat we eerst psuedo code moeten schrijven in het nederlands en deze moeten omzetten naar javascript.
+
+Je mag wel div's gebruiken maar gebruik ze niet voor elementen waar al een HTML5 element voor is. Als je bij je eindgesprek kan uitleggen waarom je een div hebt gebruik (bijvoorbeeld om2 elementen een display flex te geven) dan is dat ook goed.
+
+We hebben met z'n alle naar de code van 1 van de teamleden bekeken. Dit was omdat diegene ergens niet uit kwam. 1 van de student assistenten heeft toen laten zien hoe je d.m.v. met firefox kan debuggen. Dit doe je namelijk door de css als het ware "uit te vinken" in de editor.
+
+tip: voeg leuke of grappige animaties toe met css (als je je avontuurlijk voelt ook JavaScript) om de docenten te verrassen.
 
 
 ## Intake (week 1)
