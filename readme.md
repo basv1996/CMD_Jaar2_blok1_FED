@@ -25,6 +25,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 15. https://stackoverflow.com/questions/57516373/image-stretching-in-flexbox-in-safari (image stretching on iphones)
 16: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-hidden_attribute (aria hidden)
 17: https://m.youtube.com/static/sign_in_promo.png (sign in image)
+18: https://www.flaticon.com/free-icon/left-arrow_2089649?term=arrow%20left&page=1&position=62 (left arrow)
 
 
 
@@ -46,7 +47,23 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+-dit ging goed & dit was lastig-
+
+Ging goed:
+-Ik heb extra javascript en media queries toegevoegd aan m'n website en ben begonnen aan de 2e pagina. Ik heb de profile menu erbij gemaakt, tevens, met hulp van de docent, ervoor gezorgd dat m'n javascript code voor het actief maken van de footer sections er mooier uitzag. Hiervoor had ik eerst 3 verschillende functies die bijna identiek aan elkaar waren.
+
+Ging lastig:
+- Javascript code voor de class actief weg te halen van alle sections in de footer behalve de section waarop geklikt was.
+
+
+###agenda vor meeting
+| Mirna                      | Rikkert                   | Bas                          | Sophie |
+| -------------              |:-------------:            | -----:                       | -----:                                 |
+|  correcte code checken     | flex-box dingetje         |  Is de tweede pagina genoeg? | Wanneer wel/niet div'jes  |
+|  flex-box dingetje         |   Tweede pagina meer info |                              | moeten de img op knopjes met background-image|
+| Hoe krijgen we pluspunten? |                           |                              | Hoever moet filters uitgewerkt worden? |
 
 
 
