@@ -7,11 +7,11 @@ var overlayElement = document.querySelector("main div:first-of-type");
 var footerSections = document.querySelectorAll("footer section");
 
 var contentCreatorProfileImg = document.querySelectorAll("main section div a:nth-of-type(2) img");
-var accountButton = document.querySelector("header nav a:last-child");
+var accountButton = document.querySelector("header nav a:last-child img");
 var accountSection = document.querySelector("header section");
 var removeAccSection = document.querySelector("header section ul li:first-child svg");
 
-var threeDots = document.querySelectorAll("main section div > p");
+var threeDots = document.querySelectorAll("main section div > p span");
 var menuItemAdd2WatchLater = document.querySelector("main div:nth-of-type(2)");
 
 
