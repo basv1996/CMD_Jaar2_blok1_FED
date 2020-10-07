@@ -40,9 +40,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 3 (week 6)
+-dit ging goed & dit was lastig-
 
--same as voortgang 1-
+Ging goed:
+-
 
+Ging lastig:
+- 
+
+
+###agenda vor meeting
+| Mirna                      | Rikkert                   | Bas                          | Sophie                                           |
+| -------------              |:-------------:            | -----:                       | -----:                                           |
+| sematisch checken CSS en HTML| Grid grootte            |   sematisch checken HTML     | Is display:none; correcte code?                  |
+|                            |Grid juist plaatsen         |                              | Errors uit javascript halen                      |
+|                            | img grootte in grid        |                              | Hoe krijg je gradient over een element?          |
+|                            |                           |                              | Hoe zorg ik ervoor dat ie bovenaan blijft staan als hij uitklapt? VANAF REGEL 129 JS/ 125 HTML|
+
+### verslag van meeting
 
 
 ## Voortgang 2 (week 5)

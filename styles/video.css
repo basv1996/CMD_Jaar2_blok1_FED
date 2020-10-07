@@ -1,33 +1,19 @@
 svg {
 min-width: 24px;
+    max-height: 24px;
 }
 
 header {
 background-color: #000;
-padding: 1em 2em 1em 1em;
-}
-
-header nav {
-max-width: 85vw;
-}
-
-header nav a:first-child {
-flex-grow: unset;
 }
 
 header nav a svg {
 fill: #fff;
-width: 70%;
-height: 100%;
-    max-height: 30px;
-}
-/*youtube Logo*/
-header nav a:nth-of-type(1) svg path.st0{  
-fill:#E52721;
 }
 
+
 header nav a:not(:first-child) {
-    max-width: 4em;
+    max-width: 2em;
 }
 
 header nav a:last-child span {
@@ -41,14 +27,45 @@ header nav a:last-child span {
     border-radius: 100%;
 }
 
-main section:nth-of-type(1) > div {
+main > ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    list-style-type: none;
+    background-color: #fff;
+    z-index: 120;
+    padding: 1em;
+    min-width: 250px;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2);
+    display: none;
+}
+main > ul.active{
+display: block;}
+
+main > ul li {
+padding: 1em 0;
+}
+
+
+
+
+main section:nth-of-type(1) > div:nth-of-type(1) {
     display: grid;
-    grid-template-columns: 80% 10%;
+    grid-template-columns: 90% 10%;
     padding-bottom: .5em;
 }
 
+main section:nth-of-type(1) > div:nth-of-type(1) a {
+grid-column-start: 1;
+}
+
+main section:nth-of-type(1) > div:nth-of-type(1) p {
+grid-column-start: 2;
+}
+
 main section:nth-of-type(1) > div:nth-of-type(1) > p.active {
-    transform: rotate(180deg) translateX(10px);
+    transform: scaleY(-1);
 }
 
 main section > div > p {
@@ -65,23 +82,31 @@ main section div:nth-of-type(2) {
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
     align-items: center;
+    padding: 1em .25em;
 }
-
+    
 main section div:nth-of-type(2) > * {
     padding: 0 .5em;
 }
 
 main section div:nth-of-type(2) a {
-    order: unset;
+    order: unset;  
 }
 
-/*
-main div:nth-of-type(2) p {
-padding: unset;
+main section div:nth-of-type(2) a:nth-of-type(1){
+grid-column-start: 1;
 }
-*/
 
-main section div:nth-of-type(2) > p {
+main section div:nth-of-type(2) a:nth-of-type(2){
+grid-column-start: 2;
+    grid-row-start:1;
+}
+
+main section div:nth-of-type(2) > p{
+grid-column-start: 3;
+}
+
+main section div:nth-of-type(2) > p a{
     color: #E52721;
     font-weight: 500;
 }
@@ -96,14 +121,14 @@ main section div:nth-of-type(2) a img {
 border-radius: 100%;
 }
 
-main section ul {
+main section:first-of-type ul {
     order: 3;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
 }
 
-main section ul li {
+main section:first-of-type ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,11 +137,21 @@ main section ul li {
     font-size: .8em;
 }
 
-main section ul li svg {
+main section:first-of-type ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section:first-of-type ul li svg {
     width: 24px;
     height: 24px;
     fill: #777;
     margin-bottom: .5em;
+}
+
+main section:first-of-type ul li svg.active {
+fill: #00F;
 }
 
 main section:first-of-type > section {
@@ -148,11 +183,16 @@ main section:first-of-type > section > a {
     color: #00F;
 }
 
+main section:nth-of-type(n+2) {
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
 main section:nth-of-type(2) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1em .5em;
+    padding: 1em .75em;
 }
 
 main section:nth-of-type(2) > * {
@@ -200,5 +240,116 @@ main section:nth-of-type(2) > input:checked::after {
 }
 
 main section:nth-of-type(n+2) > div {
-    grid-template-columns: 3em 1fr auto;
+    grid-template-columns: 3em 80% 1fr;
+}
+
+main section:last-of-type {
+   
+    flex-direction: row;
+    justify-content: space-between;
+/*    margin: 0;*/
+}
+
+main section:last-of-type > * {
+    display: block;
+}
+
+main section:last-of-type h3 span {
+    width: .2em;
+    height: .2em;
+    background-color: #000;
+    border-radius: 100%;
+    display: inline-block;
+  margin-bottom: .15em;
+}
+
+main section:last-of-type svg {
+max-width: 24px;
+}
+
+@media only screen and (min-width: 667px) {
+    main section > * {
+margin: unset;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    
+    header{
+    height: 3.6em;
+    }
+    
+    main {
+    display: grid;
+    grid-template-columns:2fr 1fr;
+         grid-auto-flow: dense;
+
+}
+    
+    
+    main section {
+    padding: unset;
+    margin: unset;
+        grid-column-start: 2;  
+        border-bottom: unset;
+    }
+    
+    main section div {
+    padding: .75em 0 0 .5em;
+
+    }
+    
+    main section > a:first-of-type {
+    max-width: unset;
+    max-height: unset;
+    }
+    
+    main section:nth-of-type(1) {
+        grid-row: 1 / 10;
+            flex-direction: column;
+    }
+    
+    main section:nth-of-type(1) > a{
+        grid-column-start: 1 ;
+    grid-column-end: -1;
+        width: 100%;
+    }
+    
+    main section:nth-of-type(1), main section:last-of-type{
+    grid-column-start: 1;
+    } 
+
+    main section:nth-of-type(2) {
+    margin-top: 3.5em;
+        grid-row-start:1;
+    }
+    
+    
+    main section div > p {
+    position: unset;
+    }
+    
+    main section:nth-of-type(n+2) {
+    padding-left: .5em;
+    }
+    
+    main section:nth-of-type(n+2) > div > a:first-of-type{
+        display: none;
+    }
+    main section:nth-of-type(n+2) > div > a:last-of-type {
+    align-self: end;
+}
+    
+    main section:nth-of-type(n+2) > div {
+            justify-items: center;  
+    }
+    
+    main section:last-of-type {
+    padding: 1em;
+    grid-row-start:7;
+    }
+    
+    main section[class*="active"]:last-of-type {
+    grid-row-start:9;}
+
 }

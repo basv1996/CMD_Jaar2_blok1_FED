@@ -53,9 +53,9 @@ header {
 }
 
 header nav {
-    display: flex;
-     justify-content: space-around;
-    align-items: center;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 }
 
 header nav a:first-child {
@@ -234,7 +234,7 @@ color: #999;
 
 main > div:first-of-type.overlay {
     position: fixed;
-    z-index: 5;
+    z-index: 110;
     top: 0;
     bottom: 0;
     left: 0;
@@ -244,7 +244,7 @@ main > div:first-of-type.overlay {
 
 main > div:nth-of-type(2) {
 position: fixed;
-    z-index: 20;
+    z-index: 120;
     background-color: #fff;
     top: 50%;
     left: 50%;
