@@ -28,7 +28,7 @@ h6 {
 a,
 a:active,
 a:hover {
-    text-decoration: none;
+    text-decoration: none;   
 }
 
 
@@ -254,7 +254,11 @@ position: fixed;
 main > div:nth-of-type(2) p{
 padding: 1em;}
 
-main section {
+main section > h2 {
+    font-size: 0;
+}
+
+main section article{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -262,31 +266,29 @@ main section {
 
 main section:first-of-type {
     margin-top: 3.5em;
+    margin-bottom: 3em;
 }
 
-main section:last-of-type{
-margin-bottom: 3em;
-}
 
-main section > * {
+main section article > * {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-main section > a {
+main section article> a {
     position: relative;
 }
 
-main section > a:first-of-type {
+main section article> a:first-of-type {
     order: 1;
 }
 
-main section > a:first-child {
+main section article> a:first-child {
     margin: 1em 0 .5em 0;
 }
 
-main section > a p
+main section article> a p
 /*tijd op de video*/
 {
     position: absolute;
@@ -302,7 +304,7 @@ main section > a p
 }
 
 
-main section > div
+main section article > div
 /*alles onder de thumbnail */
 {
     display: grid;
@@ -313,24 +315,24 @@ main section > div
 }
 
 
-main section > div a:first-child {
+main section article > div a:first-child {
     flex: 1;
     order: 2;
     padding: 0 .5em;
 }
 
-main section > div  a:nth-of-type(2) {
+main section article> div  a:nth-of-type(2) {
     order: 1;
 }
 
-main section > div a:nth-of-type(2) img {   
+main section article> div a:nth-of-type(2) img {   
     width: 2.5em;
     height: 2.5em;
     border-radius: 100%;
   
 }
 
-main section > div  a:nth-of-type(2) img.animate {
+main section article> div  a:nth-of-type(2) img.animate {
       animation: makeARoll 1s linear ;  
 }
 
@@ -342,7 +344,7 @@ main section > div  a:nth-of-type(2) img.animate {
     100% {transform: rotate(360deg);}
 }
 
-main section > div > p {
+main section article> div > p {
     order: 3;
     display: flex;
     justify-content: flex-start;
@@ -352,7 +354,7 @@ main section > div > p {
     cursor: pointer;
 }
 
-main section > div > p span {
+main section article> div > p span {
     display: inline-block;
     background-color: #000;
     width: .3em;
@@ -361,11 +363,11 @@ main section > div > p span {
     margin: .1em 0;
 }
 
-main section > div > p:hover {
+main section article> div > p:hover {
 cursor: pointer;
 }
 
-main section div a h2 {
+main section article div a h2 {
     font-size: 1em;
     margin-bottom: 3px;
     overflow: hidden;
@@ -379,17 +381,17 @@ main section div a h2 {
     */
 }
 
-main section div a h2:first-letter {
+main section article div a h2:first-letter {
     text-transform: capitalize;
 }
 
 /*text under video title*/
-main section div a > p {
+main section article div a > p {
     font-size: .75em;
     opacity: 0.6;
 }
 
-main section div a > p span {
+main section article div a > p span {
     display: inline-block;
     background-color: #aaa;
     width: .5em;
@@ -416,21 +418,25 @@ footer {
     right: 0;
     height: 3em;
     background-color: #fff;
-    justify-content: space-around;
+/*    justify-content: space-around;*/
     box-shadow: .1em 0 .1em;
     align-content: center;
     padding: .5em 0;
 }
-
 footer section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+display: flex;
+justify-content: space-around;
+    width: 100%;
     align-items: center;
-    flex-basis: calc(100%/3);
 }
 
-footer section a {
+footer section h2 {
+font-size: 0;
+display: none;
+}
+
+
+footer section article a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -438,27 +444,28 @@ footer section a {
     transition: 300ms;
 }
 
-footer section img {
-    order: 1;
+
+footer section article a svg {
+order: 1;
     flex-grow: 1;
     width: 1.5em;
     height: 1.5em;
 }
 
-footer section a svg {
-width: 1.5em;
-}
-
-footer section h3 {
+footer section article a h3 {
+        order: 2;
     font-size: .8em;
     font-weight: 500;
-    order: 2;
     text-align: center;
 }
 
-footer section.active a h3, footer section.active a svg{
+footer section article.active a h3, footer section article.active a svg{
 color: #ff0000;
 fill: #F00;
+}
+
+footer section article.active a h3{
+order: 2;
 }
 
 /***********************/
@@ -551,57 +558,55 @@ font-weight: 500;
 
 
 @media only screen and (min-width: 667px) {
-    main section > * {
+    main section article> * {
     margin: 0 12px;}
 }
 
 @media only screen and (min-width: 800px) {
-    main section {
+    main section article{
     flex-direction: row;
     padding: 12px;
         border-bottom: 1px solid rgba(136,136,136,.4)
     }
     
-    main section > * {
+    main section article> * {
     margin: unset;
     }
 
-    main section > a:first-of-type {
+    main section article> a:first-of-type {
     max-width: 250px;
     min-height: 140px;
     }
     
-    main section > a:first-of-type img {
+    main section article> a:first-of-type img {
     min-width: 100%;
     min-height: 100%;}
     
-    main section div { 
+    main section article div { 
         grid-template-columns: 1fr;
         padding-top: 0;
         width: 100%;
 
     }
-    main section div > * {
+    main section article div > * {
         flex-direction: row;
         margin-bottom: .5em;
     }
+
     
-    main section div a {
-    }
-    
-    main section div > p {
+    main section article div > p {
         position: absolute;
         right: 1em;
     }
     
-    main section div > a {
+    main section article div > a {
     display: block;
     }
-    main section div > a:first-of-type {
+    main section article div > a:first-of-type {
         order: 1;       
     }
     
-    main section div > a:nth-of-type(2) {
+    main section article div > a:nth-of-type(2) {
        grid-row-start: 2;     
     }
 }

@@ -50,29 +50,29 @@ padding: 1em 0;
 
 
 
-main section:nth-of-type(1) > div:nth-of-type(1) {
+main section article:nth-of-type(1) > div:nth-of-type(1) {
     display: grid;
     grid-template-columns: 90% 10%;
     padding-bottom: .5em;
 }
 
-main section:nth-of-type(1) > div:nth-of-type(1) a {
+main section article:nth-of-type(1) > div:nth-of-type(1) a {
 grid-column-start: 1;
 }
 
-main section:nth-of-type(1) > div:nth-of-type(1) p {
+main section article:nth-of-type(1) > div:nth-of-type(1) p {
 grid-column-start: 2;
 }
 
-main section:nth-of-type(1) > div:nth-of-type(1) > p.active {
+main section article:nth-of-type(1) > div:nth-of-type(1) > p.active {
     transform: scaleY(-1);
 }
 
-main section > div > p {
+main section article > div > p {
 margin: unset;
 }
 
-main section div:nth-of-type(2) {
+main section article div:nth-of-type(2) {
     position: unset;
     order: 4;
     width: unset;
@@ -85,50 +85,50 @@ main section div:nth-of-type(2) {
     padding: 1em .25em;
 }
     
-main section div:nth-of-type(2) > * {
+main section article div:nth-of-type(2) > * {
     padding: 0 .5em;
 }
 
-main section div:nth-of-type(2) a {
+main section article div:nth-of-type(2) a {
     order: unset;  
 }
 
-main section div:nth-of-type(2) a:nth-of-type(1){
+main section article div:nth-of-type(2) a:nth-of-type(1){
 grid-column-start: 1;
 }
 
-main section div:nth-of-type(2) a:nth-of-type(2){
+main section article div:nth-of-type(2) a:nth-of-type(2){
 grid-column-start: 2;
     grid-row-start:1;
 }
 
-main section div:nth-of-type(2) > p{
+main section article div:nth-of-type(2) > p{
 grid-column-start: 3;
 }
 
-main section div:nth-of-type(2) > p a{
+main section article div:nth-of-type(2) > p a{
     color: #E52721;
     font-weight: 500;
 }
 
-main section div:nth-of-type(2) a:nth-of-type(2) p:first-of-type {
+main section article div:nth-of-type(2) a:nth-of-type(2) p:first-of-type {
     font-size: 1em;
     font-weight: 500;
     opacity: 1;
 }
 
-main section div:nth-of-type(2) a img {
+main section article div:nth-of-type(2) a img {
 border-radius: 100%;
 }
 
-main section:first-of-type ul {
+main section article:first-of-type ul {
     order: 3;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
 }
 
-main section:first-of-type ul li {
+main section article:first-of-type ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,18 +143,18 @@ main section:first-of-type ul li a {
     align-items: center;
 }
 
-main section:first-of-type ul li svg {
+main section article:first-of-type ul li svg {
     width: 24px;
     height: 24px;
     fill: #777;
     margin-bottom: .5em;
 }
 
-main section:first-of-type ul li svg.active {
+main section article:first-of-type ul li svg.active {
 fill: #00F;
 }
 
-main section:first-of-type > section {
+main section article:first-of-type > section {
     order: 5;
     margin: 0;
     padding: 1em;
@@ -162,53 +162,53 @@ main section:first-of-type > section {
     display: none;
 }
 
-main section:first-of-type > section.active {
+main section article:first-of-type > section.active {
     display: block;
 }
 
-main section:first-of-type > section > * {
+main section article:first-of-type > section > * {
     opacity: 0.6;
     font-size: .9em;
 }
 
-main section:first-of-type > section > h3 {
+main section article:first-of-type > section > h3 {
 font-weight: 400;
 }
 
-main section:first-of-type > section > p {
+main section article:first-of-type > section > p {
     padding-bottom: 1em;
 }
 
-main section:first-of-type > section > a {
+main section article:first-of-type > section > a {
     color: #00F;
 }
 
-main section:nth-of-type(n+2) {
+main section article:nth-of-type(n+2) {
     padding-left: .75em;
     padding-right: .75em;
 }
 
-main section:nth-of-type(2) {
+main section article:nth-of-type(2) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1em .75em;
 }
 
-main section:nth-of-type(2) > * {
+main section article:nth-of-type(2) > * {
     font-size: 0.9em;
     font-weight: 500;
 }
 
-main section:nth-of-type(2) > h3 {
+main section article:nth-of-type(2) > h3 {
     flex: 1;
 }
 
-main section:nth-of-type(2) > label {
+main section article:nth-of-type(2) > label {
     margin-right: 1em;
 }
 
-main section:nth-of-type(2) > input {
+main section article:nth-of-type(2) > input {
     position: relative;
     appearance: none;
     width: 40px;
@@ -218,7 +218,7 @@ main section:nth-of-type(2) > input {
     background-color: #ccc;
 }
 
-main section:nth-of-type(2) > input::after {
+main section article:nth-of-type(2) > input::after {
     content: '';
     position: absolute;
     top: 0;
@@ -229,7 +229,7 @@ main section:nth-of-type(2) > input::after {
     border-radius: 100%;
 }
 
-main section:nth-of-type(2) > input:checked {
+main section article:nth-of-type(2) > input:checked {
     background-color: rgba(22, 121, 197, .3);
 }
 
