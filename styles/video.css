@@ -49,32 +49,49 @@ padding: 1em 0;
 
 
 
-
-main section article:nth-of-type(1) > div:nth-of-type(1) {
+/*Actieve Video + beschrijving eronder*/
+main section:nth-of-type(1) article > div:nth-of-type(1) {
     display: grid;
     grid-template-columns: 90% 10%;
     padding-bottom: .5em;
 }
 
-main section article:nth-of-type(1) > div:nth-of-type(1) a {
+main section:nth-of-type(1) article > div:nth-of-type(1) a {
 grid-column-start: 1;
 }
 
-main section article:nth-of-type(1) > div:nth-of-type(1) p {
+main section:nth-of-type(1) article > div:nth-of-type(1) > p {
 grid-column-start: 2;
 }
 
-main section article:nth-of-type(1) > div:nth-of-type(1) > p.active {
+main section:nth-of-type(1) article > div:nth-of-type(1) > p.active {
     transform: scaleY(-1);
 }
 
-main section article > div > p {
+main section:nth-of-type(1) article > div > p {
 margin: unset;
+}
+
+/*metaData*/
+main section:nth-of-type(1) article > div:last-of-type{
+display: flex;
+flex-direction: column;
+    order: 4;
+      padding: 1em;
+    border-bottom: 1px solid #aaa;
+    display: none;
+}
+
+/*Meta data*/
+
+
+main section:nth-of-type(1) article > div:last-of-type.active {
+    display: block;
 }
 
 main section article div:nth-of-type(2) {
     position: unset;
-    order: 4;
+    order: 3;
     width: unset;
     transform: unset;
     display: grid;
@@ -84,7 +101,9 @@ main section article div:nth-of-type(2) {
     align-items: center;
     padding: 1em .25em;
 }
-    
+
+
+/* Sectie van uploader en subscribe button  */
 main section article div:nth-of-type(2) > * {
     padding: 0 .5em;
 }
@@ -100,6 +119,10 @@ grid-column-start: 1;
 main section article div:nth-of-type(2) a:nth-of-type(2){
 grid-column-start: 2;
     grid-row-start:1;
+}
+
+main section article> div > p {
+max-height: unset;
 }
 
 main section article div:nth-of-type(2) > p{
@@ -121,8 +144,9 @@ main section article div:nth-of-type(2) a img {
 border-radius: 100%;
 }
 
+/*Like, dislike, share, save & report button */
 main section article:first-of-type ul {
-    order: 3;
+    order: 2;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -154,6 +178,8 @@ main section article:first-of-type ul li svg.active {
 fill: #00F;
 }
 
+/******************Meta data*/
+/*
 main section article:first-of-type > section {
     order: 5;
     margin: 0;
@@ -162,53 +188,44 @@ main section article:first-of-type > section {
     display: none;
 }
 
+
 main section article:first-of-type > section.active {
     display: block;
 }
+*/
 
-main section article:first-of-type > section > * {
-    opacity: 0.6;
-    font-size: .9em;
-}
+/*************************************/
 
-main section article:first-of-type > section > h3 {
-font-weight: 400;
-}
 
-main section article:first-of-type > section > p {
-    padding-bottom: 1em;
-}
-
-main section article:first-of-type > section > a {
-    color: #00F;
-}
-
-main section article:nth-of-type(n+2) {
+main section:nth-of-type(2) 
+{
     padding-left: .75em;
     padding-right: .75em;
 }
 
-main section article:nth-of-type(2) {
+/*Up Next & autoplay button*/
+
+main section:nth-of-type(2) article:nth-of-type(1) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1em .75em;
+    padding: 1em 0;
 }
 
-main section article:nth-of-type(2) > * {
+main section:nth-of-type(2) article:nth-of-type(1) > * {
     font-size: 0.9em;
     font-weight: 500;
 }
 
-main section article:nth-of-type(2) > h3 {
+main section:nth-of-type(2) article:nth-of-type(1) > h3 {
     flex: 1;
 }
 
-main section article:nth-of-type(2) > label {
+main section:nth-of-type(2) article:nth-of-type(1) > label {
     margin-right: 1em;
 }
 
-main section article:nth-of-type(2) > input {
+main section:nth-of-type(2) article:nth-of-type(1) > input {
     position: relative;
     appearance: none;
     width: 40px;
@@ -218,7 +235,7 @@ main section article:nth-of-type(2) > input {
     background-color: #ccc;
 }
 
-main section article:nth-of-type(2) > input::after {
+main section:nth-of-type(2) article:nth-of-type(1) > input::after {
     content: '';
     position: absolute;
     top: 0;
@@ -229,41 +246,34 @@ main section article:nth-of-type(2) > input::after {
     border-radius: 100%;
 }
 
-main section article:nth-of-type(2) > input:checked {
+main section:nth-of-type(2) article:nth-of-type(1) > input:checked {
     background-color: rgba(22, 121, 197, .3);
 }
 
 
-main section:nth-of-type(2) > input:checked::after {
+main section:nth-of-type(2) article:nth-of-type(1) > input:checked::after {
     left: 20px;
     background-color: #1679c5;
 }
 
-main section:nth-of-type(n+2) > div {
-    grid-template-columns: 3em 80% 1fr;
+/*Comments section*/
+
+main section:last-of-type article {
+flex-direction: row;
+justify-content: space-between;
+padding: 1em ;
 }
 
-main section:last-of-type {
-   
-    flex-direction: row;
-    justify-content: space-between;
-/*    margin: 0;*/
-}
-
-main section:last-of-type > * {
-    display: block;
-}
-
-main section:last-of-type h3 span {
+main section:last-of-type article h3 span {
     width: .2em;
     height: .2em;
     background-color: #000;
     border-radius: 100%;
-    display: inline-block;
-  margin-bottom: .15em;
+    display: inline;
+    margin: .5em .25em;
 }
 
-main section:last-of-type svg {
+main section:last-of-type article svg {
 max-width: 24px;
 }
 
@@ -274,7 +284,7 @@ margin: unset;
 }
 
 @media only screen and (min-width: 800px){
-    
+
     header{
     height: 3.6em;
     }
@@ -282,74 +292,62 @@ margin: unset;
     main {
     display: grid;
     grid-template-columns:2fr 1fr;
-         grid-auto-flow: dense;
-
+    grid-auto-flow: dense;
 }
     
-    
-    main section {
-    padding: unset;
-    margin: unset;
-        grid-column-start: 2;  
-        border-bottom: unset;
+    main section article {
+    padding: 0 0 .5em 0;
     }
     
-    main section div {
-    padding: .75em 0 0 .5em;
-
-    }
-    
-    main section > a:first-of-type {
-    max-width: unset;
-    max-height: unset;
-    }
-    
-    main section:nth-of-type(1) {
-        grid-row: 1 / 10;
-            flex-direction: column;
-    }
-    
-    main section:nth-of-type(1) > a{
-        grid-column-start: 1 ;
-    grid-column-end: -1;
-        width: 100%;
-    }
-    
-    main section:nth-of-type(1), main section:last-of-type{
-    grid-column-start: 1;
-    } 
-
-    main section:nth-of-type(2) {
-    margin-top: 3.5em;
-        grid-row-start:1;
-    }
-    
-    
-    main section div > p {
+    main section article div > p {
     position: unset;
     }
     
-    main section:nth-of-type(n+2) {
-    padding-left: .5em;
+/*   Main Video */
+    main section:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-row-start: 1;
     }
     
-    main section:nth-of-type(n+2) > div > a:first-of-type{
+    main section:nth-of-type(1) article {
+        flex-direction: column;
+        padding: unset;
+    }
+    
+     main section:nth-of-type(1) article > a{
+         max-width: unset;
+    }
+    
+    main section:nth-of-type(1) article > div:nth-of-type(1) {
+    padding: .5em;
+    }
+    
+/*    Related Video's */
+    
+    main section:nth-of-type(2) {
+    grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    
+    main section:nth-of-type(2) article:nth-of-type(n+2) div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+     padding: 0;
+    }
+    
+    main section:nth-of-type(2) article:nth-of-type(n+2) div a:first-of-type{
         display: none;
-    }
-    main section:nth-of-type(n+2) > div > a:last-of-type {
-    align-self: end;
-}
-    
-    main section:nth-of-type(n+2) > div {
-            justify-items: center;  
+       
     }
     
-    main section:last-of-type {
-    padding: 1em;
-    grid-row-start:7;
+    main section:nth-of-type(2) article:nth-of-type(n+2) a:first-of-type {
+    min-height: unset;
     }
     
-    main section[class*="active"]:last-of-type {
-    grid-row-start:9;}
-
+    main section:last-of-type{
+    grid-column-start: 1;
+    }
+    
 }

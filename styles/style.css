@@ -46,7 +46,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 115;
     height: 3.5em;
     box-shadow: .1em 0 .1em;
     padding: 1em;
@@ -231,7 +231,9 @@ color: #999;
 
 /*********************/
 
-
+main {
+padding: 3.5em 0;
+}
 main > div:first-of-type.overlay {
     position: fixed;
     z-index: 110;
@@ -264,10 +266,12 @@ main section article{
     margin: 0 auto;
 }
 
+/*
 main section:first-of-type {
     margin-top: 3.5em;
     margin-bottom: 3em;
 }
+*/
 
 
 main section article > * {

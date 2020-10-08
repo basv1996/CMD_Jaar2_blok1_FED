@@ -4,7 +4,7 @@ var formElement = document.querySelector("header form");
 var goBackElement = document.querySelector("header form button:first-of-type");
 var overlayElement = document.querySelector("main div:first-of-type");
 
-var footerSections = document.querySelectorAll("footer section");
+var footerSecArticles = document.querySelectorAll("footer section article");
 
 var contentCreatorProfileImg = document.querySelectorAll("main section div a:nth-of-type(2) img");
 var accountButton = document.querySelector("header nav a:last-child img");
@@ -63,10 +63,10 @@ function removeHeaderOnScroll() {
 }
 
 function makeIconsRed() {
-    footerSections.forEach(function(section){
-        section.addEventListener("click", function() {
-            document.querySelector("section.active").classList.remove("active");
-            section.classList.add("active");
+    footerSecArticles.forEach(function(article){
+        article.addEventListener("click", function() {
+            document.querySelector("article.active").classList.remove("active");
+            article.classList.add("active");
             console.log("hello");
         });  
     });
