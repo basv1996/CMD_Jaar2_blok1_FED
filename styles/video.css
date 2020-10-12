@@ -1,22 +1,22 @@
 svg {
-min-width: 24px;
+    max-width: 24px;
     max-height: 24px;
 }
 
-header {
+body > header {
 background-color: #000;
 }
 
-header nav a svg {
+body > header nav a svg {
 fill: #fff;
 }
 
 
-header nav a:not(:first-child) {
+body > header nav a:not(:first-child) {
     max-width: 2em;
 }
 
-header nav a:last-child span {
+body > header nav a:last-child span {
     width: .3em;
     height: .3em;
     background-color: #fff;
@@ -50,30 +50,31 @@ padding: 1em 0;
 
 
 /*Actieve Video + beschrijving eronder*/
-main section:nth-of-type(1) article > div:nth-of-type(1) {
+main section:nth-of-type(1) article > header {
     display: grid;
     grid-template-columns: 90% 10%;
     padding-bottom: .5em;
+    order: 2;
 }
 
-main section:nth-of-type(1) article > div:nth-of-type(1) a {
+main section:nth-of-type(1) article > header a {
 grid-column-start: 1;
 }
 
-main section:nth-of-type(1) article > div:nth-of-type(1) > p {
+main section:nth-of-type(1) article > header > p {
 grid-column-start: 2;
 }
 
-main section:nth-of-type(1) article > div:nth-of-type(1) > p.active {
+main section:nth-of-type(1) article > header > p.active {
     transform: scaleY(-1);
 }
 
-main section:nth-of-type(1) article > div > p {
+main section:nth-of-type(1) article > header > p {
 margin: unset;
 }
 
 /*metaData*/
-main section:nth-of-type(1) article > div:last-of-type{
+main section:nth-of-type(1) article > div{
 display: flex;
 flex-direction: column;
     order: 4;
@@ -85,11 +86,11 @@ flex-direction: column;
 /*Meta data*/
 
 
-main section:nth-of-type(1) article > div:last-of-type.active {
+main section:nth-of-type(1) article > div.active {
     display: block;
 }
 
-main section article div:nth-of-type(2) {
+main section article footer {
     position: unset;
     order: 3;
     width: unset;
@@ -99,48 +100,49 @@ main section article div:nth-of-type(2) {
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
     align-items: center;
-    padding: 1em .25em;
+    padding: 2em .25em;
+    box-shadow: none;
 }
 
 
 /* Sectie van uploader en subscribe button  */
-main section article div:nth-of-type(2) > * {
+main section article footer > * {
     padding: 0 .5em;
 }
 
-main section article div:nth-of-type(2) a {
+main section article footer a {
     order: unset;  
 }
 
-main section article div:nth-of-type(2) a:nth-of-type(1){
+main section article footer a:nth-of-type(1){
 grid-column-start: 1;
 }
 
-main section article div:nth-of-type(2) a:nth-of-type(2){
+main section article footer a:nth-of-type(2){
 grid-column-start: 2;
     grid-row-start:1;
 }
 
-main section article> div > p {
+main section article> footer > p {
 max-height: unset;
 }
 
-main section article div:nth-of-type(2) > p{
+main section article footer > p{
 grid-column-start: 3;
 }
 
-main section article div:nth-of-type(2) > p a{
+main section article footer > p a{
     color: #E52721;
     font-weight: 500;
 }
 
-main section article div:nth-of-type(2) a:nth-of-type(2) p:first-of-type {
+main section article footer a:nth-of-type(2) p:first-of-type {
     font-size: 1em;
     font-weight: 500;
     opacity: 1;
 }
 
-main section article div:nth-of-type(2) a img {
+main section article footer a img {
 border-radius: 100%;
 }
 
@@ -210,6 +212,7 @@ main section:nth-of-type(2) article:nth-of-type(1) {
     flex-direction: row;
     justify-content: space-between;
     padding: 1em 0;
+    width: 100%;
 }
 
 main section:nth-of-type(2) article:nth-of-type(1) > * {
@@ -233,6 +236,10 @@ main section:nth-of-type(2) article:nth-of-type(1) > input {
     height: 20px;
     border-radius: 100px;
     background-color: #ccc;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) > input:hover {
+cursor: pointer;
 }
 
 main section:nth-of-type(2) article:nth-of-type(1) > input::after {
@@ -278,7 +285,7 @@ max-width: 24px;
 }
 
 @media only screen and (min-width: 667px) {
-    main section > * {
+    main section article> * {
 margin: unset;
     }
 }
@@ -299,8 +306,10 @@ margin: unset;
     padding: 0 0 .5em 0;
     }
     
-    main section article div > p {
+    
+    main section article header > p {
     position: unset;
+        margin: .5em 0 0 0;
     }
     
 /*   Main Video */
@@ -318,32 +327,39 @@ margin: unset;
          max-width: unset;
     }
     
-    main section:nth-of-type(1) article > div:nth-of-type(1) {
+    main section:nth-of-type(1) article > header {
     padding: .5em;
     }
     
 /*    Related Video's */
     
     main section:nth-of-type(2) {
-    grid-column-start: 2;
-        grid-row-start: 1;
+    grid-row-start: 1;
+    display: flex;
+    flex-wrap: wrap;
     }
     
-    main section:nth-of-type(2) article:nth-of-type(n+2) div{
+    main section:nth-of-type(2) article:nth-of-type(n+2) {
+    max-width: 20em;
+/*    margin: unset;*/
+}
+    
+    main section:nth-of-type(2) article:nth-of-type(n+2) header{
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
     align-items: center;
      padding: 0;
+        height: unset;
+        max-width: 4em;
     }
     
-    main section:nth-of-type(2) article:nth-of-type(n+2) div a:first-of-type{
-        display: none;
-       
+    main section:nth-of-type(2) article:nth-of-type(n+2) header a:first-of-type{
+        display: none; 
     }
     
     main section:nth-of-type(2) article:nth-of-type(n+2) a:first-of-type {
-    min-height: unset;
+/*    min-height: unset;*/
     }
     
     main section:last-of-type{

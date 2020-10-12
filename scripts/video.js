@@ -1,10 +1,12 @@
-var arrowShowMore = document.querySelector("main section:nth-of-type(1) article > div:nth-of-type(1) > p");
-var divShowMetadata = document.querySelector("main section:nth-of-type(1) article > div:last-of-type");
+var arrowShowMore = document.querySelector("main section:nth-of-type(1) article > header > p");
+var divShowMetadata = document.querySelector("main section:nth-of-type(1) article > div");
 var sectionPublished = document.querySelector("main section:first-of-type > section");
 var lastSection = document.querySelector("main section:last-child");
-var PrimaryInfoIcons = document.querySelectorAll("main section:first-of-type ul li a svg");
+var PrimaryInfoIcons = document.querySelectorAll("main section:first-of-type article ul li a svg");
 var extraOptions = document.querySelector("header nav a:last-child");
 var extraOptionsList = document.querySelector("main > ul");
+
+console.log(PrimaryInfoIcons);
 
 function showMetaData() {
     arrowShowMore.classList.toggle("active");
@@ -26,10 +28,23 @@ extraOptionsList.className="";
 
 
 function makePrimaryInfoBlue() {
-    PrimaryInfoIcons.forEach(function(Icon){
+        PrimaryInfoIcons.forEach(function(Icon){
         Icon.addEventListener("click", function() {
-            document.querySelector("main section:first-of-type ul li a svg").classList.remove("active");
-            Icon.classList.add("active");
+//            document.querySelector("svg.active").classList.remove("active");
+//            if(Icon.classList.contains("active")){
+//               Icon.className= "";
+//            console.log("hoii");
+//            }
+//              Icon.classList.add("active");
+            if(Icon.classList.contains("active")){
+                Icon.classList.remove("active");
+            }
+            else {
+                 Icon.classList.add("active");
+            };
+            
+          
+            
         });  
     });
 }

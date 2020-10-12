@@ -6,12 +6,12 @@ var overlayElement = document.querySelector("main div:first-of-type");
 
 var footerSecArticles = document.querySelectorAll("footer section article");
 
-var contentCreatorProfileImg = document.querySelectorAll("main section div a:nth-of-type(2) img");
+var contentCreatorProfileImg = document.querySelectorAll("main section article> header a:nth-of-type(2) img");
 var accountButton = document.querySelector("header nav a:last-child img");
 var accountSection = document.querySelector("header section");
 var removeAccSection = document.querySelector("header section ul li:first-child svg");
 
-var threeDots = document.querySelectorAll("main section div > p span");
+var threeDots = document.querySelectorAll("main section article header > p span");
 var menuItemAdd2WatchLater = document.querySelector("main div:nth-of-type(2)");
 
 
@@ -87,6 +87,8 @@ makeIconsRed();
 
 searchIcon.addEventListener("click", displaySearchForm);
 goBackElement.addEventListener("click", displayHeader);
+overlayElement.addEventListener("click",displayHeader);
 accountButton.addEventListener("click", displayAccount);
 removeAccSection.addEventListener("click", displayAccount);
+
     
