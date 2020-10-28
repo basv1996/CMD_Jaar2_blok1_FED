@@ -33,7 +33,7 @@ function makePrimaryInfoBlue() {
 //            document.querySelector("svg.active").classList.remove("active");
 //            if(Icon.classList.contains("active")){
 //               Icon.className= "";
-//            console.log("hoii");
+//            console.log("testing");
 //            }
 //              Icon.classList.add("active");
             if(Icon.classList.contains("active")){
@@ -41,10 +41,7 @@ function makePrimaryInfoBlue() {
             }
             else {
                  Icon.classList.add("active");
-            };
-            
-          
-            
+            };  
         });  
     });
 }

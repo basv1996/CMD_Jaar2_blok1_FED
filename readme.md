@@ -31,11 +31,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Ik heb bijna tot geen problemen ondervonden met de HTML of CSS. De javascript toevoegen bleek soms toch even wat lastiger als verwacht. Ik schreef hier dan wel eerst psuedo code voor en probeerde dit te vertalen naar JavaScript maar dat lukte niet altijd even goed. Ook met display grid werken was voor mij helemaal nieuw tijdens dit vak. In het begin begreep ik er nog niet zo heel veel van maar ik heb het gevoel dat ik nu een hele goede basis er voor heb.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+![Screenshot van de homepage op meerdere apparaten](images/screenshots/EindResultaat/HomeScreen_MultipleDevices.png) 
+![Screenshot van de video page op meerdere apparaten](images/screenshots/EindResultaat/VideoScreen_MultipleDevices.png) 
 
 
 
@@ -43,10 +44,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -dit ging goed & dit was lastig-
 
 Ging goed:
--
+Ik heb lekker aan m'n website gewerkt en geen tegenslagen ondervonden. De punten die ik af wou hebben voor deze week heb ik af gekregen.
 
 Ging lastig:
-- 
+niks.
 
 
 ###agenda vor meeting

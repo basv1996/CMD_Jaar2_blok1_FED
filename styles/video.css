@@ -50,6 +50,29 @@ padding: 1em 0;
 
 
 /*Actieve Video + beschrijving eronder*/
+main section:nth-of-type(1) article > a::before {
+content: "";
+position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+main section:nth-of-type(1) article > a::after {
+content: "";
+    border: 40px solid #fff;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+
 main section:nth-of-type(1) article > header {
     display: grid;
     grid-template-columns: 90% 10%;
@@ -327,6 +350,10 @@ margin: unset;
          max-width: unset;
     }
     
+    main section:first-of-type article > a img {
+    max-height: 30em;
+}
+    
     main section:nth-of-type(1) article > header {
     padding: .5em;
     }
@@ -354,8 +381,17 @@ margin: unset;
         max-width: 4em;
     }
     
+/*    main section article> a:first-of-type*/
+    main section:nth-of-type(2) article> a:first-of-type
+    {
+    max-height: 140px;
+    }
+    
     main section:nth-of-type(2) article:nth-of-type(n+2) header a:first-of-type{
         display: none; 
+    }
+    main section:nth-of-type(2) article:nth-of-type(n+2) a img{
+        min-width: unset;
     }
     
     main section:nth-of-type(2) article:nth-of-type(n+2) a:first-of-type {
