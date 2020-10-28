@@ -16,6 +16,7 @@ function showMetaData() {
 }
 
 function showExtraOptions() {
+    accountSection.toggleAttribute("hidden");
     overlayElement.classList.add("overlay");
     extraOptionsList.classList.add("active");
 }
